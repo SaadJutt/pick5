@@ -1,0 +1,23 @@
+.searchInput {
+    background: #18027B;
+    color: white;
+}
+
+.searchInput .native-wrapper {
+    padding-left: 15px;
+}
+
+.searchInput::after {
+    content: url('../../../assets/img/search.png');
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    height: 100%;
+}

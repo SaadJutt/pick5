@@ -1,0 +1,27 @@
+<div class="ion-padding container4">
+    <div>
+        <img (click)="back()" src="./../../../assets/img/back.png" />
+        <span class="floatRight">
+    <img class="imgSize" src="./../../../assets/img/demo.png" />
+    <span class="text-color-white"> $4.00 </span>
+        </span>
+    </div>
+
+    <h6 class="color-dan">Band <span class="text-color-white">Band Name - Concert Schedule</span></h6>
+
+    <div>
+        <ion-input class="ion-margin-top border-rad-20 searchInput" placeholder="Search Location Schedule" type="search" name=""></ion-input>
+    </div>
+
+    <div class="scrollable">
+        <h5 class="text-color-white">Band Name</h5>
+        <ion-row *ngFor="let i of newArray" class="text-color-white band-row">
+            <ion-col size="10">
+                Friday
+                <p class="band-Upcom">5 - 27 Providence</p>
+            </ion-col>
+            <ion-col class="color-dan pad-t-15">$20</ion-col>
+        </ion-row>
+    </div>
+
+</div>
