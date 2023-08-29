@@ -1,0 +1,51 @@
+.by-band-icon1, .by-band-icon2, .by-band-icon3 {
+    background: url('../../../assets/img/byBandIcon1.png');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px ;
+    padding: 15px;
+}
+
+.by-band-icon2{
+    background: url('../../../assets/img/bybandicon2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.by-band-icon3{
+    background: url('../../../assets/img/bybandicon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.by-band-iconItem {
+    margin: 0;
+    padding-top: 25px;
+}
+
+.byband-row{
+    background: url('../../../assets/img/bybandrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.byConcert-row {
+    padding: 16px 0 10px 5px;
+}
+
+.pad7 {
+    padding: 7px;
+}
+
+.pad6-0 {
+    padding: 6px 0;
+}
+
+.font16 {
+    font-size: 16px;
+}

@@ -1,0 +1,14 @@
+.select-song-item .item-native {
+    border-radius: 15px !important;
+    background: white;
+}
+
+@media (min-width: 412px)  {
+    .select-song-scroll {
+        overflow-y: scroll;
+    height: 725px;
+    }
+}
+    
+
+  

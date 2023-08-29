@@ -9,9 +9,10 @@ import { Router } from '@angular/router';
 export class BandListsComponent  implements OnInit {
 
 
-   myArray = [];
-   isActive = false;
-   isBandListFlag = true;
+  myArray = ['Bearly Dead', 'Phish', 'Amazing Crown', 'Angry Salad', 'Small Factory', 'Kites','Bearly Dead', 'Phish', 'Amazing Crown', 'Angry Salad', 'Small Factory', 'Kites', 'Bearly Dead', 'Phish', 'Amazing Crown', 'Angry Salad', 'Small Factory', 'Kites','Bearly Dead', 'Phish', 'Amazing Crown', 'Angry Salad', 'Small Factory', 'Kites'];
+
+   isActive = true;
+   isBandListFlag = false;
 
    isUpcommingArray = [
     {
@@ -19,18 +20,18 @@ export class BandListsComponent  implements OnInit {
       date: 'May, 23 2023',
       bandsList: [
         {
-        bandName: 'aaaaaaaaabc',
+        bandName: 'Bearly Dead - Providence',
         price :'$20'
       },
       {
-        bandName: 'aaaaaaaaabc',
+        bandName: 'Neughbor- Uniondale',
         price :'$20'
       },{
-        bandName: 'aaaaaaaaabc',
+        bandName: 'Beoga - Providence ',
         price :'$20'
       },
       {
-        bandName: 'aaaaaaaaabc',
+        bandName: '84 Tigers - Providence',
         price :'$20'
       }
     ]
@@ -40,26 +41,55 @@ export class BandListsComponent  implements OnInit {
     date: 'May, 24 2023',
     bandsList: [
       {
-      bandName: 'aaaaaaaaabc',
+      bandName: 'Jerry Cantral - Providence',
       price :'$20'
     },
     {
-      bandName: 'aaaaaaaaabc',
+      bandName: 'Goose - Uniondale',
       price :'$20'
     },{
-      bandName: 'aaaaaaaaabc',
-      price :'$20'
-    },
-    {
-      bandName: 'aaaaaaaaabc',
+      bandName: 'Phish - Uniondale ',
       price :'$20'
     }
   ]
- }
+ },
+ {
+  day: 'Monday',
+  date: 'May, 25 2023',
+  bandsList: [
+    {
+    bandName: 'Jerry Cantral - Providence',
+    price :'$20'
+  },
+  {
+    bandName: 'Goose - Uniondale',
+    price :'$20'
+  },{
+    bandName: 'Phish - Uniondale ',
+    price :'$20'
+  }
+]
+},{
+  day: 'Tuesday',
+  date: 'May, 26 2023',
+  bandsList: [
+    {
+    bandName: 'Jerry Cantral - Providence',
+    price :'$20'
+  },
+  {
+    bandName: 'Goose - Uniondale',
+    price :'$20'
+  },{
+    bandName: 'Phish - Uniondale ',
+    price :'$20'
+  }
+]
+}
   ];
 
   constructor(private router: Router) {
-    this.myArray.length = 10;
+    this.myArray,length = 20;
    }
 
   ngOnInit() {}

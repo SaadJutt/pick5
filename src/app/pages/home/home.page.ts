@@ -12,7 +12,19 @@ export class HomePage {
 
   bandList(){
       console.log('call');
-      this.router.navigateByUrl('tabs/leaderboard');
+      this.router.navigateByUrl('tabs/bandlist');
+  }
+
+  isLeaderBoard() {
+    this.router.navigateByUrl('tabs/leaderboard');
+  }
+
+  isPlayingHistory(){
+    this.router.navigateByUrl('tabs/playinghistory');
+  }
+
+  isPaymentHistory() {
+    this.router.navigateByUrl('tabs/payinghistory');
   }
 
 }

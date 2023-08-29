@@ -1,4 +1,4 @@
-<div class="signin-container">
+<div class="signin-container scrollable">
     <div class="ion-padding ion-text-center">
         <img src="./../../../assets/img/logo.png" class="p-t-50">
         <div class="signup=group ion-padding-top ion-padding-bottom">
@@ -13,15 +13,27 @@
         <div class="mt-50 ">
             <ion-label class="ion-padding-top text-color-white">Or use one of your social profiles</ion-label>
             <div class="ion-padding-top ion-padding-bottom">
-                <table>
+                <ion-row>
+                    <ion-col size="6">
+                        <ion-button fill="clear" expand="block" class="third-party-login">
+                            <ion-icon class="icons" name='logo-facebook'></ion-icon><span
+                                class="icons-label">Facebook</span></ion-button>
+                    </ion-col>
+                    <ion-col size="6">
+                        <ion-button fill="clear" expand="block" class="third-party-login">
+                            <ion-icon class="icons" name='logo-google'></ion-icon><span
+                            class="icons-label">Google</span></ion-button>
+                    </ion-col>
+                </ion-row>
+                <!-- <table>
                     <tr>
-                        <td class="border-rad-20 login-btn">
+                        <td class="border-rad-20 login-btn icon-color">
                             <ion-icon class="icons" name='logo-facebook'></ion-icon><span class="icons-label">Facebook</span> </td>
                         <td style="width: 3%;"></td>
-                        <td class="border-rad-20 login-btn">
+                        <td class="border-rad-20 login-btn icon-color">
                             <ion-icon class="icons" name='logo-google'></ion-icon><span class="icons-label">Google</span></td>
                     </tr>
-                </table>
+                </table> -->
             </div>
             <ion-label class="ion-padding-top text-color-white">Don’t have an account? <span [routerLink]="['/signup']" class="link">Sign Up Now</span></ion-label>
         </div>

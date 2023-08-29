@@ -1,15 +1,14 @@
-<div class="ion-padding container2">
+<div class="ion-padding container2 scrollable">
 
     <div class="ion-text-center">
         <div class="profile-container">
             <img class="profile-image" src="../../../assets/img/demo.png">
 
         </div>
-        <h5 class="cat-label">My Name</h5>
-        <p class="cat-label">email@email.com</p>
+        <h5 class="cat-label font-w-700">Maria Gotham</h5>
+        <p class="cat-label">mariagotham@pick5.com</p>
     </div>
-
-    <ion-grid>
+    <ion-grid class="mb-40">
         <ion-row>
             <ion-col (click)="bandList()" class="grid-container ion-text-center">
                 <div class="icon-container">
@@ -17,7 +16,7 @@
                 </div>
                 <p class="cat-label">Bands</p>
             </ion-col>
-            <ion-col class="grid-container ion-text-center">
+            <ion-col (click)="bandList()" class="grid-container ion-text-center">
                 <div class="icon-container">
                     <img src="./../../../assets/img/homeicon2.png">
                 </div>
@@ -25,13 +24,13 @@
             </ion-col>
         </ion-row>
         <ion-row>
-            <ion-col class="grid-container ion-text-center">
+            <ion-col (click)="isLeaderBoard()" class="grid-container ion-text-center">
                 <div class="icon-container">
                     <img src="./../../../assets/img/homeicon3.png">
                 </div>
                 <p class="cat-label">Leaderboard</p>
             </ion-col>
-            <ion-col class="grid-container ion-text-center">
+            <ion-col (click)="isPlayingHistory()"  class="grid-container ion-text-center">
                 <div class="icon-container">
                     <img src="./../../../assets/img/homeicon4.png">
                 </div>
@@ -39,7 +38,7 @@
             </ion-col>
         </ion-row>
         <ion-row>
-            <ion-col class="grid-container ion-text-center">
+            <ion-col (click)="isPaymentHistory()" class="grid-container ion-text-center">
                 <div class="icon-container">
                     <img src="./../../../assets/img/homeicon5.png">
                 </div>
@@ -53,6 +52,8 @@
             </ion-col>
         </ion-row>
     </ion-grid>
+
+   
 
 
 </div>
