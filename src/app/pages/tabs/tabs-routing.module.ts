@@ -58,6 +58,10 @@ const routes: Routes = [
         loadChildren: () => import('../location-schedule/location-schedule.module').then(m => m.LocationScheduleModule)
       },
       {
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then(m => m.ProfileModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
 })
 export class LeaderBoardComponent  implements OnInit {
 
+  isActive = true;
+  isBandListFlag = false;
+
   public leaderBoard = [
     {
     name: 'Jessica',
@@ -45,5 +48,18 @@ export class LeaderBoardComponent  implements OnInit {
 
   byBand() {
     this.router.navigate(['tabs/byband']);
+  }
+
+  isBand() {
+    console.log('call');
+    this.isBandListFlag = false;
+   
+      this.isActive = true;
+    
+  }
+
+  isYear() {
+    this.isBandListFlag = true;
+    this.isActive = false;
   }
 }

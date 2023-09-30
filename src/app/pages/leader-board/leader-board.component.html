@@ -48,6 +48,31 @@
       </ion-row>
     </div>
 
+    <div class="ion-padding-top">
+      <ion-row>
+        <ion-col size="6">
+          <button
+            [ngClass]="isActive ? 'activeBtn' : 'bandList-button'"
+           (click)="isBand()"
+          >
+            <span class="bandbtn-dec">
+              <img src="../../../assets/img/bandlist-music.png" /> </span
+            >By Band
+          </button>
+        </ion-col>
+        <ion-col size="6">
+          <button
+            [ngClass]="!isActive ? 'activeBtn' : 'bandList-button'"
+            (click)="isYear()"
+          >
+            <span class="bandbtn-dec">
+              <img src="../../../assets/img/upcomming.png" /> </span
+            >By Year, Date
+          </button>
+        </ion-col>
+      </ion-row>
+    </div>
+
     <div class="ion-padding-top text-color-white leaderboard-scroll">
 
       <ion-row *ngFor="let i of leaderBoard" class="leader-row leaderboard-row" (click)="byBand()">

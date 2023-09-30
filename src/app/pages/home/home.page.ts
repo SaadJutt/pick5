@@ -27,4 +27,8 @@ export class HomePage {
     this.router.navigateByUrl('tabs/payinghistory');
   }
 
+  isProfile(){
+    this.router.navigateByUrl('tabs/profile');
+  }
+
 }

@@ -16,7 +16,7 @@ export class PayingHistoryComponent  implements OnInit {
 
   ngOnInit() {}
   back(){
-    this.router.navigateByUrl('tabs');
+    this.router.navigateByUrl('tabs/profile');
   }
 
 }
